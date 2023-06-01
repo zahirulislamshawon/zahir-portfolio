@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="font-nunito">
+
+    <!-- intero section -->
+    <div class=" h-96 lg:h-screen bg-gradient-to-t from-indigo-200 relative overflow-hidden">
+       
+        
+        <!-- navbar -->
+        <nav class=" w-full fixed top-0 bg-white z-10">
+            <div class="container mx-auto py-5 flex justify-between items-center ">
+                <div class="flex items-center gap-3">
+                    <img class="w-8" src="../image/logo.png" alt="">
+                    <span class="text-2xl font-bold text-indigo-900">Z.Islam</span>
+                </div>
+                <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase">
+                    <li class="hover:text-gray-900">
+                        <a href="#">homepage</a>
+                    </li>
+                    <li class="hover:text-gray-900">
+                        <a href="#">about me</a>
+                    </li>
+                    <li class="hover:text-gray-900">
+                        <a href="#">services</a>
+                    </li>
+                    <li class="hover:text-gray-900">
+                        <a href="#">works</a>
+                    </li>
+                    <li class="hover:text-gray-900">
+                        <a href="#">contact</a>
+                    </li>
+                </ul>
+                <img src="../image/moon.png" class="hidden md:block w-5 cursor-pointer" alt="">
+                <div id="hamburger" class="space-y-1  cursor-pointer md:hidden z-20">
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                </div>
+                <ul id="menu" class=" hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
+                    <li>
+                        <a href="#">homepage</a>
+                    </li>
+                    <li>
+                        <a href="#">about me</a>
+                    </li>
+                    <li>
+                        <a href="#">services</a>
+                    </li>
+                    <li>
+                        <a href="#">works</a>
+                    </li>
+                    <li>
+                        <a href="#">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- intro content -->
+        <!-- image -->
+        <img class="absolute bottom-0 right-0 h-5/6 object-cover lg:left-0 mx-auto" src="../image/man.png" alt="">
+        <!-- circle -->
+        <div class="hidden lg:block absolute -bottom-1/4 w-big h-big bg-indigo-900 rounded-full right-0 left-0 mx-auto -z-10"></div>
+        <!-- animated text -->
+        <div class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-10 md:text-6xl lg:left-5 lg:text-5xl xl:left-48 xl:text-7xl ">
+            <span class="text-gray-500">Frelance</span>
+            <p id="text" class="text-red-500"></p>
+        </div>
+        <!-- text -->
+        <div class=" hidden lg:flex flex-col gap-5 absolute top-0 bottom-0 m-auto right-10 bg-white p-5 h-fit w-1/3 rounded-md shadow-lg ">
+            <h1 class="text-4xl font-bold text-indigo-900">Hi, I'm Zahir</h1>
+            <p class="text-gray-400">with over 10 years of experience on web design and development. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates non asperiores cumque molestias, quia qui sapiente quo neque ea temporibus? Nisi atque consequuntur velit aliquam! Non reprehenderit facilis molestiae delectus. </p>
+            <a class="bg-indigo-600 text-white text-xl w-fit px-3 py-2 rounded-md font-semibold" href="#">Hire Me</a>
+        </div>
+       
+
+
+    </div>
+    <script src="../app.js"></script>
+    <script src="../autotyping.js"></script>
+</body>
+</html>
